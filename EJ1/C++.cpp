@@ -32,3 +32,23 @@ struct asistencia{
     std::string estado;
 };
 
+//clase estudiante con gestion de asistencia
+
+class EstudianteConAsistencia {
+public:
+    estudiante estudiante;
+    std::vector<asistencia> asistencias;
+
+    //registrar y mostrar asistencia
+    void registrarAsistencia(const asistencia& asistencia) {
+        asistencias.push_back(asistencia);
+    }
+
+    void mostrarAsistencias() const {
+        for (const auto& asistencia : asistencias) {
+            std::cout << "Fecha: " << asistencia.fecha << " | Materia: " << asistencia.materia
+                      << " | Estado: " << asistencia.estado << std::endl;
+        }
+    }
+};
+
