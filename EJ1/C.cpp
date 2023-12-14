@@ -64,3 +64,15 @@ int main() {
     estudianteAsistencia.estudiante.materias = (char**)malloc(estudianteAsistencia.estudiante.numMaterias * sizeof(char*));
     estudianteAsistencia.estudiante.materias[0] = "Matemáticas";
     estudianteAsistencia.estudiante.materias[1] = "Programación";
+
+ struct Asistencia asistencia1 = {"2023-01-15", "Matemáticas", "Asistió"};
+    struct Asistencia asistencia2 = {"2023-01-16", "Programación", "Falta"};
+
+    registrarAsistencia(&estudianteAsistencia, &asistencia1);
+    registrarAsistencia(&estudianteAsistencia, &asistencia2);
+
+    printf("Información del Estudiante:\n");
+    mostrarEstudiante(&estudianteAsistencia.estudiante);
+
+    mostrarAsistencias(&estudianteAsistencia);
+
