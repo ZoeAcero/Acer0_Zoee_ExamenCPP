@@ -6,9 +6,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4bb0c0-93cb-4925-8de0-cbf1e043bade" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/C.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="3f4bb0c0-93cb-4925-8de0-cbf1e043bade" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +34,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "C++",
+    "git-widget-placeholder": "C",
     "last_opened_file_path": "C:/Users/macer/Documents/GitHub/Acer0_Zoee_ExamenCPP/EJ1/C.cpp",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,6 +63,7 @@
       <workItem from="1702554277340" duration="22000" />
       <workItem from="1702554317826" duration="18000" />
       <workItem from="1702554347646" duration="146000" />
+      <workItem from="1702554516941" duration="25000" />
     </task>
     <servers />
   </component>
