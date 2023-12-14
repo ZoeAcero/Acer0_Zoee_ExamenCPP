@@ -60,3 +60,16 @@ public:
         return "Error en el formato de la fecha: ";
     }
 };
+
+void ExcepcionFormatoFecha();
+
+int main() {
+
+    EstudianteConAsistencia estudianteAsistencia;
+
+    //datos del estudiante
+
+    estudianteAsistencia.estudiante.nombre = "Zoe";
+    estudianteAsistencia.estudiante.edad = 18;
+    estudianteAsistencia.estudiante.promedio = 7.0;
+    estudianteAsistencia.estudiante.materias = {"Matemáticas", "Programación"};
