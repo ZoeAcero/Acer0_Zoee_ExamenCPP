@@ -37,3 +37,17 @@ struct EstudianteConAsistencia {
     struct Asistencia* asistencias;
     int numAsistencias;
 };
+
+//Registrar y mostrar asistencia
+void registrarAsistencia(struct EstudianteConAsistencia* estudianteConAsistencia, const struct Asistencia* asistencia) {
+    estudianteConAsistencia->asistencias[estudianteConAsistencia->numAsistencias] = *asistencia;
+        estudianteConAsistencia->numAsistencias++;
+}
+
+void mostrarAsistencias(const struct EstudianteConAsistencia* estudianteConAsistencia) {
+    printf("\n Registro de Asistencia:\n");
+    for (int i = 0; i < estudianteConAsistencia->numAsistencias; i++) {
+        printf("Fecha: %s | Materia: %s | Estado: %s\n", estudianteConAsistencia->asistencias[i].fecha,
+               estudianteConAsistencia->asistencias[i].materia, estudianteConAsistencia->asistencias[i].estado);
+    }
+}
