@@ -23,3 +23,12 @@ void mostrarEstudiante(const estudiante& estudiante) {
         std::cout << materia << std::endl;
     }
 }
+
+//estructura asistencia
+
+struct asistencia{
+    std::string fecha;
+    std::string materia;
+    std::string estado;
+};
+
