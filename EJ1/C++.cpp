@@ -73,3 +73,17 @@ int main() {
     estudianteAsistencia.estudiante.edad = 18;
     estudianteAsistencia.estudiante.promedio = 7.0;
     estudianteAsistencia.estudiante.materias = {"Matemáticas", "Programación"};
+
+    asistencia asistencia1 = {"2023-13-12", "Matemáticas", "Asistió"};
+    asistencia asistencia2 = {"2023-7-1", "Programación", "Falta"};
+
+    try {
+        // Intentar registrar asistencia con formato de fecha incorrecto
+        asistencia asistencia3 = {"15-01-2023", "Física", "Tardanza"};
+        if (asistencia3.fecha.find("-") == std::string::npos) {
+            throw Excepcion();
+        }
+
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+    }
