@@ -30,3 +30,10 @@ struct Asistencia {
     char materia[50];
     char estado[10];
 };
+
+//Estructura estudiante con gestion de asistencia
+struct EstudianteConAsistencia {
+    struct Estudiante estudiante;
+    struct Asistencia* asistencias;
+    int numAsistencias;
+};
