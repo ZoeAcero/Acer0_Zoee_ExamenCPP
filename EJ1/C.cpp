@@ -23,3 +23,10 @@ void mostrarEstudiante(const struct Estudiante* estudiante) {
     }
     printf("\n");
 }
+
+//Estructura asistencia
+struct Asistencia {
+    char fecha[11];
+    char materia[50];
+    char estado[10];
+};
