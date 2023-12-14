@@ -87,3 +87,16 @@ int main() {
     } catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
     }
+
+    estudianteAsistencia.registrarAsistencia(asistencia1);
+    estudianteAsistencia.registrarAsistencia(asistencia2);
+
+    std::cout << "Información del Estudiante:" << std::endl;
+    mostrarEstudiante(estudianteAsistencia.estudiante);
+
+    std::cout << "\nRegistro de Asistencia:" << std::endl;
+    estudianteAsistencia.mostrarAsistencias();
+
+    return 0;
+
+}
